@@ -1,10 +1,12 @@
 <template>
   <header>
       <nav>
-          <ul></ul>
-          <ul></ul>
-          <ul></ul>
-          <ul></ul>
+        <router-link to="/">ExpenseDeck</router-link>
+        <ul>
+            <li><router-link to="/">Accueil</router-link></li>
+            <li>Contact</li>
+            <li></li>
+        </ul>
       </nav>
   </header>
 </template>
@@ -16,5 +18,15 @@ export default {
 </script>
 
 <style>
-
+header{
+    width: 80%;
+    height: 75px;
+}
+header ul{
+    display: inline-block;
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+}
 </style>
