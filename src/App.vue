@@ -1,7 +1,9 @@
 <template>
   <div class="body-container">
     <Header />
-    <router-view></router-view>
+    <div class="main-content">
+      <router-view></router-view>
+    </div>
     <SideBar />
   </div>
 </template>
@@ -56,5 +58,9 @@ body{
 a{
   text-decoration: none;
   color: #A4AFC3;
+}
+.main-content{
+  width: 80%;
+  padding: 2rem;
 }
 </style>
