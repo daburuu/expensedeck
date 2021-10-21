@@ -1,12 +1,17 @@
 <template>
-    <UserCreate />
+    <Header />
+    <HomePage />
+    <SideBar />
 </template>
 
 <script>
-import UserCreate from '@/components/UserCreate.vue';
+import Header from '@/components/Header.vue';
+import HomePage from '@/components/HomePage.vue';
+import SideBar from '@/components/SideBar.vue';
+
     export default{
         name: 'Home',
-        components: { UserCreate }
+        components: { HomePage, Header, SideBar }
     }
 </script>
 <style>
