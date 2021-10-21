@@ -43,6 +43,10 @@ body{
   border-radius: 40px;
   -webkit-box-shadow: 0px 0px 11px 9px #A097D8; 
   box-shadow: 0px 0px 11px 9px #A097D8;
+  background-image: url('./assets/wallet.svg');
+  background-repeat: no-repeat;
+  background-position: 55% 80%;
+  background-size: 700px 600px;
 }
 .body-container{
   height: 100%;
