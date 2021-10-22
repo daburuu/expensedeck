@@ -21,6 +21,8 @@ export default {
 header{
     width: 80%;
     height: 75px;
+    position: absolute;
+    z-index: 999;
 }
 header ul{
     display: inline-block;

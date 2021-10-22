@@ -14,7 +14,9 @@ import SideBar from '@/components/SideBar.vue';
 
 export default{
     name: 'App',
-    components: { Header, SideBar }
+    components: { 
+      Header, 
+      SideBar }
 }
 </script>
 
@@ -28,6 +30,10 @@ html {
   width: 100%;
   background-color: #bdb2ff;
   overflow-y: hidden;
+}
+html *{
+  box-sizing: border-box;
+  line-height: 1;
 }
 body{
   margin: 4rem;
@@ -45,10 +51,6 @@ body{
   border-radius: 40px;
   -webkit-box-shadow: 0px 0px 11px 9px #A097D8; 
   box-shadow: 0px 0px 11px 9px #A097D8;
-  background-image: url('./assets/wallet.svg');
-  background-repeat: no-repeat;
-  background-position: 55% 80%;
-  background-size: 700px 600px;
 }
 .body-container{
   height: 100%;
@@ -61,6 +63,12 @@ a{
 }
 .main-content{
   width: 80%;
-  padding: 2rem;
+  height: 100%
+}
+.center{
+    text-align: center;
+}
+.uppercase{
+  text-transform: uppercase;
 }
 </style>
