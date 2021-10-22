@@ -62,8 +62,11 @@ a{
   color: #A4AFC3;
 }
 .main-content{
-  width: 80%;
+  width: 75%;
   height: 100%
+}
+.hidden{
+  display: none;
 }
 .center{
     text-align: center;

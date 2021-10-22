@@ -8,7 +8,6 @@
         <div class="form-title">
             <div class="above-title uppercase">Démarrez gratuitement</div>
             <div class="title">Inscrivez vous à ExpenseDeck.</div>
-            <div class="already-member">Déjà membre ? <router-link to="/login">Connectez-vous !</router-link></div>
         </div>
         <!-- <div class="form-group center">
             <div class="input-container col-6">
@@ -39,6 +38,7 @@
         </div>
         <div class="form-group center">
             <input type="submit" :disabled="disabled == 1" value="S'inscrire">
+            <div class="already-member">Déjà membre ? <router-link to="/login">Connectez-vous !</router-link></div>
         </div>
     </form>
   </div>
@@ -92,7 +92,7 @@ export default {
 form{
     margin: 0 auto;
     border-radius:20px;
-    width: 80%;
+    width: 90%;
 }
 .left-content{
     width: 50%;
@@ -114,8 +114,8 @@ form{
 .left-content img{
     position: relative;
     top: 30%;
-    right: -50px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .form-title{
     width: 80%;
@@ -130,14 +130,14 @@ form{
 }
 .form-title .title{
     color: #4E65D6;
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 10px;
 }
-.form-title .already-member{
+.form-group .already-member{
     font-size: 12px;
 }
-.form-title .already-member a{
+.form-group .already-member a{
     text-decoration: underline;
 }
 .form-group{
@@ -187,7 +187,19 @@ input{
 input[type="submit"]{
     cursor: pointer;
     width: 50%;
-    padding: 0;
+    background-color: #4e65d6;
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 5px;
+    transition: all 0.3;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+input[type="submit"]:hover{
+    background-color: #455ac7;
+    transform: scale(1.02);
+    -webkit-box-shadow: 0px 0px 2px 3px #ADB5BD; 
+    box-shadow: 0px 0px 10px 3px #ADB5BD;
 }
 input:focus{
     outline: none;
